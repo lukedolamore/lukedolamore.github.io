@@ -1,0 +1,78 @@
+/* The side navigation menu */
+.sidebar {
+    margin: 0;
+    padding: 0;
+    width: 250px;
+    background-color: #4B4B4C;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+  }
+  
+  /* Sidebar links */
+  .sidebar a {
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+    border-top: solid #C6C6C6;
+    
+    border-width: thin;
+    border-bottom: none;
+  }
+
+  .active {
+    border-right: solid orangered;
+}
+
+  /* For last a tag so border isn't overlapping */
+  .sidebar a:last-child {
+    border-bottom: solid #C6C6C6;
+    border-width: thin;
+  }
+  
+  /* Mouse over on nav links*/
+  .sidebar a:hover:not(.active) {
+    color: white;
+  }
+
+
+  
+  /* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+  div.content {
+    margin-left: 250px;
+    padding: 1px 16px;
+    height: 1000px;
+  }
+  
+  /* On screens that are less than 700px wide, make the sidebar into a topbar */
+  @media screen and (max-width: 700px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    .sidebar a {float: left;}
+    div.content {margin-left: 0;}
+  }
+  
+  /* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+  @media screen and (max-width: 400px) {
+    .sidebar a {
+      text-align: center;
+      float: none;
+    }
+  }
+
+img {
+    padding: 10px;
+}
+
+h3 {
+    color: black;
+    padding: 10px;
+}
+
+.sidebar a span {
+    display: block;
+}
