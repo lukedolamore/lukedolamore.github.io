@@ -1,7 +1,6 @@
-<!doctype html>
 <html lang="en">
   <head>
-    <title>Title</title>
+    <title>Luke Dolamore Portfolio</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -11,6 +10,11 @@
     <link rel="stylesheet" type="text/css" href="css/style.css" />
 </head>
   <body>
+    <div class="sidebar">
+      <a class="active" href="#">Home</a>
+      <a href="#new">news</a>
+    </div>
+
       
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
